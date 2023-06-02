@@ -1,0 +1,16 @@
+>mm10
+TCACGTTC	1.4826138229934	8
+>hg38
+TCATGGGC	-4.49184705630747	8
+>hipArm
+--------		8
+>rhiFer1
+--------		8
+>RSI
+TTATGGAC	-11.1940223074882	8
+>pteVam1
+TAATGGAC	-12.6679534958207	8
+>MPI
+--------		8
+>myoDav1
+--------		8

@@ -2,6 +2,7 @@
 cut -f 4 MotifTarget_mm10.bed | grep -v "Motif Name" | sort | uniq > allmotif
 awk '{print $0"\tmotifnum"FNR}' allmotif > allmotif1
 perl sub2.changename.pl MotifTarget_mm10.bed changename-MotifTarget.bed
+dir=$PWD
 cat list | while read li
 do
 aimdir=$dir/$li

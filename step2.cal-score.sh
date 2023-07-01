@@ -1,4 +1,5 @@
 #!/bin/bash
+dir=$PWD
 mkdir $dir/tmp-motif-matrix
 cd $dir/tmp-motif-matrix
 awk '{OFS="\t";print $5,$4,length($3),$3}'  ../changename-MotifTarget.bed | grep "^mo"> tmp1
@@ -11,6 +12,7 @@ len=`awk '{print $3}' <<< "$id"`
 grep "$motif" -A$len ../all_motif_rmdup > ${num}.motif
 done
 
+cd ../
 cat list | while read li
 do
 fasdir=$dir/$li
@@ -39,9 +41,9 @@ else
 	output=${out_name}.motif_score+++.txt
 	output1=${out_name}.motif_score---.txt
 	target_motif=$dir/tmp-motif-matrix/${motifname}.motif
-    perl sub02.cal-motif-score.pl $target_motif $seq $output
+    perl ../sub02.cal-motif-score.pl $target_motif $seq $output
 
-	perl sub03.cal-motif-score-reverse-strand.pl $target_motif $seq $output1
+	perl ../sub03.cal-motif-score-reverse-strand.pl $target_motif $seq $output1
 fi
 done
 done

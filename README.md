@@ -22,6 +22,7 @@ findMotifsGenome.pl $bed mm10 ./. -size given -find all_motif_rmdup -preparsedDi
 
 fasta file: eg. alignment-chr7-99249119-99249904.fas
 
+all_motif_rmdup: This file is derived from PECA2.(Duren, Zhana, et al. "Time course regulatory analysis based on paired expression and chromatin accessibility data." Genome research 30.4 (2020): 622-634.)
 
 Run:
 

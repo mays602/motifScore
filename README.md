@@ -26,7 +26,7 @@ all_motif_rmdup: This file is derived from PECA2.(Duren, Zhana, et al. "Time cou
 
 Run:
 
-cd motifScore
+cd motifScore/test
 sh step1.prepare_motif_fasta.sh
 sh step2.cal-score.sh
 sh step3.merge.pl

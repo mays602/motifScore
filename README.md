@@ -32,3 +32,6 @@ sh step2.cal-score.sh
 sh step3.merge.pl
 
 Results: result7-merge.txt
+
+On this basis, we further use FIMO to calculate score and P-value of the particular MOTIF sequences.
+Run: fimo -oc meme $motif $sequence
